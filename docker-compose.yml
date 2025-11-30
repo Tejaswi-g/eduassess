@@ -14,6 +14,6 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: sah_db
       MYSQL_USER: sah_user
-      MYSQL_PASSWORD: 
+      MYSQL_PASSWORD: Tej@1234
     ports:
       - "3307:3306"
