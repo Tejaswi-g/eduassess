@@ -1,1 +1,19 @@
+version: "3.8"
 
+services:
+  tomcat-app:
+    image: smarthub-image
+    ports:
+      - "9080:8080"
+    depends_on:
+      - mysql-db
+
+  mysql-db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sah_db
+      MYSQL_USER: sah_user
+      MYSQL_PASSWORD: 
+    ports:
+      - "3307:3306"
